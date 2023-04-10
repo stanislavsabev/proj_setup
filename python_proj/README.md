@@ -12,52 +12,72 @@ Using `pytest`, `flake8`, `mypy`, `tox` and `GitHub Actions` workflows.
 
 ## Setup
 
-Create project directory.
+### Create project directory.
 
-```text
-mkdir myproject
-cd myproject
+Download this repo and copy the `python_proj/` directory.
+
+```bash
+git clone https://github.com/stanislavsabev/proj_setup.git
 ```
 
-Pull starter repo.
+```bash
+cp -R proj_setup.git/python_proj myproject
 
-```text
-git pull https://github.com/stanislavsabev/python_starter.git
+cd myproject
 ```
 
 Setup virtual environment and activate it.
 
-```text
-python -m venv venv
+```bash
+python -m venv .venv
+```
 
-source ./venv/bin/activate # Linux / Mac
-.\venv\Scripts\activate.bat # Windows
+- Linux / macOS
+```bash
+source ./.venv/bin/activate
+```
+- Windows
+```powershell
+.\.venv\Scripts\activate.bat
 ```
 
 Install requirements.
 
-```text
+```bash
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
-**NOTE:** At this point you can rename the package.
+### Install locally
 
-1. Rename the `src/python_starter` directory.
+Change the package name - optional, but recommended.
 
-2. Change all mentions of `python_starter` in pyproject.toml, setup.cfg, setup.py, tests/test_start.py and (optional) in example.py.
+- Rename in `src/` directory.
+```bash
+mv src/python_proj src/myproject
+```
 
-Install the package in edit mode
+- Change all mentions of `python_proj` in 
 
 ```text
+  pyproject.toml
+  setup.cfg
+  setup.py
+  tests/test_start.py 
+  example.py
+```
+
+Install as editable package
+
+```bash
 pip install -e .
 ```
 
 ## Local Usage
 
-Run `pytest`, `flake8` and `mypy` from a command line...
+Run `pytest`, `flake8` and `mypy` from the command line...
 
-```text
+```bash
 $ pytest
 ...
 tests\test_start.py .
@@ -66,26 +86,25 @@ tests\test_start.py .
 ----------- coverage: platform win32, python 3.9.2-final-0 -----------
 Name                             Stmts   Miss  Cover
 ----------------------------------------------------
-src\python_starter\__init__.py       0      0   100%
-src\python_starter\start.py          2      0   100%
+src\python_proj\__init__.py       0      0   100%
+src\python_proj\start.py          2      0   100%
 ----------------------------------------------------
 TOTAL                                2      0   100%
 
 
 ========================================================================= 1 passed in 0.11s ===
 ```
-
-```text
+```bash
 $ mypy src
 Success: no issues found in 6 source files
-
+```
+```bash
 $ flake8 src tests
 0
 ```
+.. or all at once, with `tox`
 
-.. or  using `tox`
-
-```text
+```bash
 $ tox -e py37,mypy,flake8 # Change 'py37' based on your python version.
 ...
 ______________________________________________________________________________ summary ___
@@ -95,8 +114,8 @@ ______________________________________________________________________________ s
   congratulations :)
 ```
 
-## Remote usage with `GitHub Actions`
+## GitHub Actions
 
-Create [GitHub](https://github.com) repo and push your changes.
+Create [GitHub](https://github.com) repo and push your changes. This will trigger the CI/CD pipeline.
 
 For more information see the GitHub Actions  [documentation](https://docs.github.com/en/actions/using-workflows).

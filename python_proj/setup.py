@@ -1,4 +1,4 @@
-"""`python_starter` package setup."""
+"""`python_proj` package setup."""
 
 import setuptools
 

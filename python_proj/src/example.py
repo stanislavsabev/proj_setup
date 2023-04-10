@@ -1,6 +1,6 @@
-"""Example for how to use the `python_starter` package."""
+"""Example for how to use the `python_proj` package."""
 
-from python_starter import start
+from python_proj import start
 
 
 def main():

@@ -1,6 +1,6 @@
 """Test start module."""
 
-from python_starter import start
+from python_proj import start
 
 
 def test_start_here():
