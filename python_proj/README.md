@@ -6,7 +6,7 @@ Using `pytest`, `flake8`, `mypy`, `tox` and `GitHub Actions` workflows.
 
 ---
 
-[![tests](https://github.com/stanislavsabev/python_starter/workflows/tests/badge.svg)](https://github.com/stanislavsabev/python_starter/actions/workflows/tests.yaml)
+[![Tests icon here!](https://github.com/<profile>/<project>/workflows/tests/badge.svg)](https://github.com/<profile>/<project>/actions/workflows/tests.yaml)
 
 ---
 
