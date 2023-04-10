@@ -10,11 +10,12 @@ for various project and language types, to be used as a starting point.
 
 - cpp_sdl_gcc_windows_proj
 
-- python_starter
+- python_proj
 
+- rust_proj
+
+---
 - qspreadsheet
-
-- rust_startup
 
 - vba_parser
 
