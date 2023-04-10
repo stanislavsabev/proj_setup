@@ -1,9 +1,14 @@
-# proj_setup
+# Project setups
 
-Setup files and directories for various project types 
-These are IDE and environment setups, and should not be packaged with the project source.
+Files and directories for environment and IDE setup
+for various project and language types.
 
-List of project setups:
+These shouldn't be packaged with project's source, but are useful as starting point.
+
+
+## List of project setups:
+
+- cpp_sql_gcc_windows_proj
 
 - python_starter
 
@@ -12,4 +17,3 @@ List of project setups:
 - rust_startup
 
 - vba_parser
-
