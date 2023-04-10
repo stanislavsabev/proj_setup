@@ -3,7 +3,7 @@
 Files and directories for environment and IDE setup
 for various project and language types.
 
-These shouldn't be packaged with project's source, but are useful as starting point.
+These shouldn't be packaged with project's source, but are useful as a starting point.
 
 
 ## List of project setups:
