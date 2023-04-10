@@ -6,7 +6,9 @@ Using `pytest`, `flake8`, `mypy`, `tox` and `GitHub Actions` workflows.
 
 ---
 
-[![Tests icon here!](https://github.com/<profile>/<project>/workflows/tests/badge.svg)](https://github.com/<profile>/<project>/actions/workflows/tests.yaml)
+NOTE: Update project url and make sure the `Tests` tag is the same as `name: Tests` in `./.github/workflows/tests.yaml`
+
+[![Tests](https://github.com/<profile>/<project>/workflows/tests/badge.svg)](https://github.com/<profile>/<project>/actions/workflows/tests.yaml)
 
 ---
 
