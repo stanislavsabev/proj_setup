@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/deps/SDL2-2.0.16/x86_64-w64-mingw32/include/**"
+      ],
+      "compilerPath": "C:\\mingw64\\bin\\gcc.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        "-Wall"
+      ]
+    }
+  ],
+  "version": 4
+}
