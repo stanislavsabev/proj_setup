@@ -1,6 +1,8 @@
-# python_starter
+# Python project
 
-Standard template for a python project with `tox` and GitHub Actions workflows.
+Template for python CI/CD project setup.
+
+Using `pytest`, `flake8`, `mypy`, `tox` and `GitHub Actions` workflows.
 
 ---
 
