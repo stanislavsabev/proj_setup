@@ -2,7 +2,7 @@
 
 Template for python CI/CD project setup.
 
-Using `pytest`, `flake8`, `mypy`, `tox` and `GitHub Actions` workflows.
+Using `tox`, `pytest`, `flake8`, `mypy`,  and `GitHub Actions` workflows.
 
 ---
 
@@ -18,37 +18,40 @@ NOTE: Update project url and make sure the `Tests` tag is the same as `name: Tes
 
 Download this repo and copy the `python_proj/` directory.
 
-```bash
-git clone https://github.com/stanislavsabev/proj_setup.git
+```console
+$ git clone https://github.com/stanislavsabev/proj_setup.git
 ```
 
-```bash
-cp -R proj_setup.git/python_proj myproject
+```console
+cp -R proj_setup.git/python_proj <myproject>
 
-cd myproject
+cd <myproject>
 ```
 
 Setup virtual environment and activate it.
 
-```bash
-python -m venv .venv
+```console
+$ python -m venv .venv
 ```
 
 - Linux / macOS
-```bash
-source ./.venv/bin/activate
+
+```console
+$ source ./.venv/bin/activate
 ```
+
 - Windows
-```powershell
-.\.venv\Scripts\activate.bat
+
+```console
+> .\.venv\Scripts\activate.bat
 ```
 
 Install requirements.
 
-```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
+```console
+$ python -m pip install --upgrade pip
+$ pip install -r requirements.txt
+$ pip install -r requirements-dev.txt
 ```
 
 ### Install locally
@@ -56,8 +59,9 @@ pip install -r requirements-dev.txt
 Change the package name - optional, but recommended.
 
 - Rename in `src/` directory.
-```bash
-mv src/python_proj src/myproject
+
+```console
+$ mv src/python_proj src/<myproject>
 ```
 
 - Change all mentions of `python_proj` in 
@@ -73,7 +77,7 @@ mv src/python_proj src/myproject
 Install as editable package
 
 ```bash
-pip install -e .
+$ pip install -e .
 ```
 
 ## Local Usage
@@ -97,17 +101,20 @@ TOTAL                                2      0   100%
 
 ========================================================================= 1 passed in 0.11s ===
 ```
-```bash
+
+```console
 $ mypy src
 Success: no issues found in 6 source files
 ```
-```bash
+
+```console
 $ flake8 src tests
 0
 ```
+
 .. or all at once, with `tox`
 
-```bash
+```console
 $ tox -e py37,mypy,flake8 # Change 'py37' based on your python version.
 ...
 ______________________________________________________________________________ summary ___
